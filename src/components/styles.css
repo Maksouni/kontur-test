@@ -1,0 +1,45 @@
+header{
+    background-color: #ffffff;
+    padding-inline: 2rem;
+    border-radius: 75px;
+    margin-inline: 9vw;
+    margin-top: 3vh;
+}
+
+.logo-text{
+    font-weight: 500;
+    font-size: 24px;
+    text-decoration: none;
+    color: inherit;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+}
+
+ul{
+    display: flex;
+    gap: 2rem;
+    font-weight: 400;
+    font-size: 13px;
+    list-style: none;
+    padding-top: 0.5rem;
+}
+
+li{
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+li a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.phone{
+    color:  var(--secondary-color);
+    text-decoration: none;
+    margin-left: auto;
+    cursor: pointer;
+}
