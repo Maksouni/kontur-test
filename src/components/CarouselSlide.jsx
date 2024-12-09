@@ -1,28 +1,21 @@
-import Code from '../assets/code.svg'
 import CustomButton from './CustomButton'
 
-export default function CarouselSlide() {
+// eslint-disable-next-line react/prop-types
+export default function CarouselSlide({image, title, paragraph}) {
     const handleButtonClick = () => {
 
     }
 
     return (
         <div className="carousel-slide">
-            <img src={Code} alt="code" className='image-slide' />
+            <img src={image} alt="slide-image" className='image-slide' />
             <div className='slide-text-container'>
                 <h1>
-                    Школа
-                    <span style={{ color: 'var(--primary-color)' }}>{` {`}</span>
-                    <span style={{ fontWeight: 700 }}>программирования</span>
-                    <span style={{ color: 'var(--primary-color)' }}>{`} `}</span>
-                    <br />для тех, кому нужны
-                    <br />реальные навыки,
-                    <br />а не просто сертификат
+                    {title}
                 </h1>
                 <hr />
                 <p>
-                    Закажите звонок, и наш специалист свяжется с
-                    <br />вами в ближайшее время
+                    {paragraph}
                 </p>
                 <CustomButton
                     text='Заказать звонок'

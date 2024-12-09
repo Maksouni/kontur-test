@@ -91,41 +91,34 @@ li a:hover {
     margin-bottom: 1rem;
     margin-top: 0;
 }
+.slide-text-container p {
+    font-size: 16px;
+    margin-bottom: 1.5rem;
+}
 
 hr {
     border: none;
     height: 2px;
     background-color: #dedede;
     margin-top: 1px;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px;
+    margin-right: 200px; */
     margin-left: 0px;
-    margin-right: 200px;
+    width: 365px;
 }
 
 /* ******************************************************* 
     swiper
  ******************************************************* */
-.swiper-button-prev,
-.swiper-button-next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 10;
-    cursor: pointer;
-    font-size: 24px;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 10px;
-    border-radius: 50%;
-}
-
-.swiper-button-prev {
-    left: 10px;
-}
-
-.swiper-button-next {
-    right: 10px;
-}
+ .custom-prev,
+ .custom-next {
+   background-color: #000;
+   color: #fff;
+   border: none;
+   padding: 10px 20px;
+   cursor: pointer;
+ }
+ 
 
 /* ******************************************************* 
     button
