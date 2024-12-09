@@ -2,8 +2,8 @@
 body{
   font-family: 'Gilroy';
   color: var(--text-color);
-  /* background-color: #F9F8FD; */
-  background-color: rgba(20, 4, 50, 0.941);
+  background-color: #F9F8FD;
+  /* background-color: rgba(20, 4, 50, 0.941); */
   margin: 0;
 }
 
