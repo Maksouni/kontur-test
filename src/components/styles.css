@@ -110,20 +110,40 @@ hr {
 /* ******************************************************* 
     swiper
  ******************************************************* */
- .custom-prev,
- .custom-next {
-   background-color: #000;
-   color: #fff;
-   border: none;
-   padding: 10px 20px;
-   cursor: pointer;
- }
- 
+
+.swiper-button-next,
+.swiper-button-prev {
+    width: 36px !important;
+    height: 36px !important;
+    border-radius: 50% !important;
+    background-color: #ffffff !important;
+    padding: 10px;
+    color: #000000 !important;
+    transition: all 0.3s ease;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    background-color: var(--primary-color) !important;
+    color: #ffffff !important;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    font-family: "Gilroy" !important;
+    font-size: 32px !important;
+}
+.swiper-button-next::after {
+    content: "→" !important;
+}
+.swiper-button-prev::after {
+    content: "←" !important;
+}
 
 /* ******************************************************* 
     button
  ******************************************************* */
-button {
+.custom-button {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -139,6 +159,6 @@ button {
     transition: all 0.3s ease;
 }
 
-button:hover {
+.custom-button:hover {
     transform: scale(1.1);
 }

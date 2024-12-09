@@ -1,7 +1,7 @@
 import { Navigation } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import CarouselSlide from './CarouselSlide';
-import { useRef } from 'react';
+import { useRef, useEffect } from 'react';
 import image1 from '../assets/code.svg'
 import image2 from '../assets/programmer.svg'
 import image3 from '../assets/develop.svg'
@@ -13,26 +13,22 @@ import 'swiper/css/navigation';
 export default function Carousel() {
     const prevRef = useRef(null);
     const nextRef = useRef(null);
+    useEffect(() => {
+        // Убедитесь, что рефы обновились до передачи их в Swiper
+        if (prevRef.current && nextRef.current) {
+            const swiperEl = document.querySelector('.swiper');
+            swiperEl.swiper.params.navigation.prevEl = prevRef.current;
+            swiperEl.swiper.params.navigation.nextEl = nextRef.current;
+            swiperEl.swiper.navigation.init();
+            swiperEl.swiper.navigation.update();
+        }
+    }, []);
     return (
-        <>
-            <button ref={prevRef} className="custom-prev">
-                ← Назад
-            </button>
-            <button ref={nextRef} className="custom-next">
-                Вперед →
-            </button>
             <Swiper
                 modules={[Navigation]}
                 slidesPerView={1}
-                navigation={{
-                    prevEl: prevRef.current,
-                    nextEl: nextRef.current,
-                }}
-                onBeforeInit={(swiper) => {
-                    // Связываем кнопки с элементами Swiper
-                    swiper.params.navigation.prevEl = prevRef.current;
-                    swiper.params.navigation.nextEl = nextRef.current;
-                }}
+                navigation
+                loop={true}
             >
                 <SwiperSlide>
                     <CarouselSlide
@@ -80,6 +76,5 @@ export default function Carousel() {
                 </SwiperSlide>
 
             </Swiper>
-        </>
     );
 };
