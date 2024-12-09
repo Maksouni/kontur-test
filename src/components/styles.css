@@ -1,10 +1,13 @@
-/* header */
+/* ******************************************************* 
+    header 
+ ******************************************************* */
 header {
     background-color: #ffffff;
     padding-inline: 2rem;
     border-radius: 75px;
     margin-inline: 9vw;
     margin-top: 3vh;
+    margin-bottom: 3vh;
 }
 
 .logo-text {
@@ -49,12 +52,9 @@ li a:hover {
     cursor: pointer;
 }
 
-/* carousel */
-
-/* .carousel-slide{
-    display: flex;
-    justify-content: center;
-} */
+/* ******************************************************* 
+    carousel 
+ ******************************************************* */
 
 .carousel-slide {
     position: relative;
@@ -80,6 +80,7 @@ li a:hover {
 .slide-text-container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     margin-left: 5rem;
     z-index: 10;
 }
@@ -87,14 +88,64 @@ li a:hover {
 .slide-text-container h1 {
     font-size: 46px;
     font-weight: 500;
+    margin-bottom: 1rem;
+    margin-top: 0;
 }
 
 hr {
-    border: none; 
-    height: 2px; 
-    background-color: #DEDEDE; 
+    border: none;
+    height: 2px;
+    background-color: #dedede;
     margin-top: 1px;
     margin-bottom: 10px;
     margin-left: 0px;
     margin-right: 200px;
+}
+
+/* ******************************************************* 
+    swiper
+ ******************************************************* */
+.swiper-button-prev,
+.swiper-button-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    cursor: pointer;
+    font-size: 24px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.swiper-button-prev {
+    left: 10px;
+}
+
+.swiper-button-next {
+    right: 10px;
+}
+
+/* ******************************************************* 
+    button
+ ******************************************************* */
+button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: none;
+    border-radius: 82px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 400;
+    color: #ffffff;
+    width: fit-content;
+    padding-block: 1.5rem;
+    padding-inline: 2.6rem;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.1);
 }
