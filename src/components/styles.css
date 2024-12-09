@@ -1,4 +1,5 @@
-header{
+/* header */
+header {
     background-color: #ffffff;
     padding-inline: 2rem;
     border-radius: 75px;
@@ -6,19 +7,19 @@ header{
     margin-top: 3vh;
 }
 
-.logo-text{
+.logo-text {
     font-weight: 500;
     font-size: 24px;
     text-decoration: none;
     color: inherit;
 }
 
-nav{
+nav {
     display: flex;
     align-items: center;
 }
 
-ul{
+ul {
     display: flex;
     gap: 2rem;
     font-weight: 400;
@@ -27,19 +28,73 @@ ul{
     padding-top: 0.5rem;
 }
 
-li{
+li {
     display: flex;
     text-align: center;
     align-items: center;
 }
-li a{
+li a {
     text-decoration: none;
     color: inherit;
+    transition: transform 0.3s ease;
+}
+li a:hover {
+    transform: scale(1.1);
 }
 
-.phone{
-    color:  var(--secondary-color);
+.phone {
+    color: var(--secondary-color);
     text-decoration: none;
     margin-left: auto;
     cursor: pointer;
+}
+
+/* carousel */
+
+/* .carousel-slide{
+    display: flex;
+    justify-content: center;
+} */
+
+.carousel-slide {
+    position: relative;
+    display: flex;
+    justify-content: start;
+    max-width: 1160px;
+    height: 481px;
+    margin: auto;
+    background-image: url("../assets/background-slider.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.image-slide {
+    position: absolute;
+    top: 50%;
+    left: 80.5%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+.slide-text-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5rem;
+    z-index: 10;
+}
+
+.slide-text-container h1 {
+    font-size: 46px;
+    font-weight: 500;
+}
+
+hr {
+    border: none; 
+    height: 2px; 
+    background-color: #DEDEDE; 
+    margin-top: 1px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    margin-right: 200px;
 }

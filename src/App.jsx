@@ -1,12 +1,14 @@
-import Header from './components/header'
 import './App.css'
+import Header from './components/Header'
+import Carousel from './components/Carousel'
 
 function App() {
 
   return (
-    <div className='wrapper'>
+    <>
       <Header />
-    </div>
+      <Carousel />
+    </>
   )
 }
 

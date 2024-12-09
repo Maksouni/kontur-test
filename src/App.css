@@ -3,11 +3,7 @@ body{
   font-family: 'Gilroy';
   color: var(--text-color);
   /* background-color: #F9F8FD; */
-  background-color: black;
+  background-color: rgba(20, 4, 50, 0.941);
   margin: 0;
 }
 
-.wrapper{
-  display: flex;
-  flex-direction: column;
-}
