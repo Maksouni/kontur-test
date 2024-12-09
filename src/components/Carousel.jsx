@@ -27,6 +27,7 @@ export default function Carousel() {
             <Swiper
                 modules={[Navigation]}
                 slidesPerView={1}
+                spaceBetween={150}
                 navigation
                 loop={true}
             >

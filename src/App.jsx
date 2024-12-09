@@ -7,7 +7,10 @@ function App() {
   return (
     <>
       <Header />
-      <Carousel />
+      <div className='carousel-wrapper'>
+        <Carousel />
+      </div>
+
     </>
   )
 }

@@ -56,6 +56,11 @@ li a:hover {
     carousel 
  ******************************************************* */
 
+.carousel-wrapper{
+    margin-inline: auto;
+    max-width: 1160px;
+}
+
 .carousel-slide {
     position: relative;
     display: flex;
@@ -113,8 +118,8 @@ hr {
 
 .swiper-button-next,
 .swiper-button-prev {
-    width: 36px !important;
-    height: 36px !important;
+    width: 24px !important;
+    height: 24px !important;
     border-radius: 50% !important;
     background-color: #ffffff !important;
     padding: 10px;
@@ -131,7 +136,7 @@ hr {
 .swiper-button-prev::after,
 .swiper-button-next::after {
     font-family: "Gilroy" !important;
-    font-size: 32px !important;
+    font-size: 26px !important;
 }
 .swiper-button-next::after {
     content: "→" !important;
