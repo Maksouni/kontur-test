@@ -2,6 +2,8 @@ import "./App.css";
 import Header from "./components/Header";
 import Carousel from "./components/Carousel";
 import InfoBlock from "./components/InfoBlock";
+import Fancybox from "./components/FancyBox";
+
 import blockImage1 from "./assets/block-image1.svg";
 import blockImage2 from "./assets/block-image2.svg";
 import blockImage3 from "./assets/block-image3.svg";
@@ -11,6 +13,11 @@ import blockImage6 from "./assets/block-image6.svg";
 import blockImage7 from "./assets/block-image7.svg";
 import image1 from "./assets/image1.png";
 import image2 from "./assets/image2.png";
+import gallery1 from "./assets/gallery1.png";
+import gallery2 from "./assets/gallery2.png";
+import gallery3 from "./assets/gallery3.png";
+import gallery4 from "./assets/gallery4.png";
+import gallery5 from "./assets/gallery5.png";
 
 function App() {
   const infoBlocksData = [
@@ -100,7 +107,6 @@ function App() {
           </p>
         </div>
       </div>
-
       <div className="text-image-container">
         <div className="text-container">
           <h2>Методика обучения</h2>
@@ -115,6 +121,34 @@ function App() {
         <div className="img-container">
           <img src={image2} alt="study methodic" />
         </div>
+      </div>
+
+      <div className="fancybox-wrapper">
+        <Fancybox
+          options={{
+            Carousel: {
+              infinite: false,
+            },
+          }}
+        >
+          <div className="gallery">
+            <a data-fancybox="gallery" href={gallery1} className="item item-1">
+              <img src={gallery1} />
+            </a>
+            <a data-fancybox="gallery" href={gallery2} className="item">
+              <img src={gallery2} />
+            </a>
+            <a data-fancybox="gallery" href={gallery3} className="item">
+              <img src={gallery3} />
+            </a>
+            <a data-fancybox="gallery" href={gallery4} className="item">
+              <img src={gallery4} />
+            </a>
+            <a data-fancybox="gallery" href={gallery5} className="item">
+              <img src={gallery5} />
+            </a>
+          </div>
+        </Fancybox>
       </div>
     </>
   );
