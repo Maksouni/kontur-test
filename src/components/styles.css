@@ -47,7 +47,90 @@ li a:hover {
     text-decoration: none;
     margin-left: auto;
     cursor: pointer;
+    transition: transform 0.3s ease;
 }
+
+.phone:hover {
+    transform: scale(1.1);
+}
+
+/* ******************************************************* 
+    footer
+ ******************************************************* */
+footer{
+    display: flex;
+    flex-direction: column;
+}
+
+footer .grid{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    width: 1160px;
+    margin: auto;
+}
+
+.grid-item{
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-and-title{
+    display: flex;
+    gap: 1rem;
+}
+.logo-and-title h2{
+    font-size: 36px;
+    font-weight: 500;
+    margin: 0;
+}
+.logo-and-title p{
+    color: #8E8E8E;
+    font-size: 16px;
+    font-weight: 400;
+    width: 38px;
+    margin: 0;
+}
+
+.social-list{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    margin-top: 2rem;
+    gap: 1rem;
+}
+
+.footer-nav ul{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    margin-left: auto;
+    padding: 0;
+    font-size: 13px;
+    gap: 1rem;
+}
+
+
+.footer-mail{
+    margin-left: auto;
+    text-decoration: none;
+    color: inherit;
+}
+
+footer hr{
+    border: none;
+    height: 2px;
+    background-color: #dedede;
+    margin-block: 2rem;
+    margin-inline: auto;
+    width: 1160px;
+}
+
+.second-grid a{
+    text-decoration: none;
+    color: #8E8E8E;
+    margin-bottom: 2rem;
+}
+
 
 /* ******************************************************* 
     carousel 
@@ -98,7 +181,7 @@ li a:hover {
     margin-bottom: 1.5rem;
 }
 
-hr {
+.slide-text-container hr {
     border: none;
     height: 2px;
     background-color: #dedede;

@@ -19,6 +19,7 @@ import gallery2 from "./assets/gallery2.png";
 import gallery3 from "./assets/gallery3.png";
 import gallery4 from "./assets/gallery4.png";
 import gallery5 from "./assets/gallery5.png";
+import Footer from "./components/Footer";
 
 function App() {
   const infoBlocksData = [
@@ -172,6 +173,8 @@ function App() {
           </Map>
         </div>
       </YMaps>
+
+      <Footer />
     </>
   );
 }
