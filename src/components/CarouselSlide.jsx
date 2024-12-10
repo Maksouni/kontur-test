@@ -1,9 +1,11 @@
+import { useModal } from '../providers/ModalContext'
 import CustomButton from './CustomButton'
 
 // eslint-disable-next-line react/prop-types
 export default function CarouselSlide({image, title, paragraph}) {
+    const { openModal } = useModal()
     const handleButtonClick = () => {
-
+        openModal()
     }
 
     return (

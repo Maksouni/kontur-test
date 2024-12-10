@@ -20,6 +20,8 @@ import gallery3 from "./assets/gallery3.png";
 import gallery4 from "./assets/gallery4.png";
 import gallery5 from "./assets/gallery5.png";
 import Footer from "./components/Footer";
+import Modal from "./components/Modal";
+import { ModalProvider } from "./providers/ModalContext";
 
 function App() {
   const infoBlocksData = [
@@ -68,8 +70,9 @@ function App() {
   ];
 
   return (
-    <>
+    <ModalProvider>
       <Header />
+      <Modal />
       <div className="carousel-wrapper">
         <Carousel />
       </div>
@@ -153,7 +156,7 @@ function App() {
         </Fancybox>
       </div>
 
-      <YMaps>
+      <YMaps query={{apikey: "347a9901-ac47-49ac-a0dc-001fb838321c"}}>
         <div className="ymap-container">
           <Map
             defaultState={{
@@ -175,7 +178,7 @@ function App() {
       </YMaps>
 
       <Footer />
-    </>
+    </ModalProvider>
   );
 }
 

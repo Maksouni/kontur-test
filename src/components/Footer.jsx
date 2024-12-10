@@ -164,8 +164,8 @@ export default function Footer() {
         </div>
       </div>
       <hr />
-      <div className="second-grid grid">
-        <a href="#">© 2023 — Все права защищены</a>
+      <div className="grid second-grid">
+        <a href="#">© 2024 — Все права защищены</a>
         <a href="#">Пользовательское соглашение</a>
         <a href="#">Политика конфиденциальности</a>
       </div>
