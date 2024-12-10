@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import Carousel from "./components/Carousel";
 import InfoBlock from "./components/InfoBlock";
 import Fancybox from "./components/FancyBox";
+import { YMaps, Map, Placemark } from "@pbe/react-yandex-maps";
 
 import blockImage1 from "./assets/block-image1.svg";
 import blockImage2 from "./assets/block-image2.svg";
@@ -150,6 +151,27 @@ function App() {
           </div>
         </Fancybox>
       </div>
+
+      <YMaps>
+        <div className="ymap-container">
+          <Map
+            defaultState={{
+              center: [55.028894, 82.926493],
+              zoom: 15,
+            }}
+            width="100%"
+            height="100%"
+          >
+            <Placemark
+              geometry={[55.028894, 82.926493]}
+              properties={{
+                hintContent: "Депутатская, 46",
+                balloonContent: "Депутатская, 46",
+              }}
+            />
+          </Map>
+        </div>
+      </YMaps>
     </>
   );
 }

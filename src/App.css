@@ -116,7 +116,17 @@ li {
 .gallery .item-1 {
   grid-column: 1; /* Занимает первый столбец */
   grid-row: 1 / span 2;
-
   width: 571px;
   height: 571px;
+}
+
+.ymap-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  margin-inline: auto;
+  width: 1160px;
+  height: 423px;
+  border-radius: 30px;
+  overflow: hidden;
 }
