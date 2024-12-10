@@ -1,7 +1,7 @@
 import './styles.css'
 
 // eslint-disable-next-line react/prop-types
-export default function TextBlock({image, title, text}){
+export default function InfoBlock({image, title, text}){
     return(
         <div className="text-block">
             <img src={image} alt="image" />
