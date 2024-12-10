@@ -24,7 +24,7 @@ nav {
     padding-inline: 2rem;
 }
 
-ul {
+.header-list {
     display: flex;
     gap: 2rem;
     font-weight: 400;
@@ -33,11 +33,6 @@ ul {
     padding-top: 0.5rem;
 }
 
-li {
-    display: flex;
-    text-align: center;
-    align-items: center;
-}
 li a {
     text-decoration: none;
     color: inherit;
@@ -169,3 +164,42 @@ hr {
 .custom-button:hover {
     transform: scale(1.1);
 }
+
+
+
+/* ******************************************************* 
+    text-block
+ ******************************************************* */
+.text-block{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 254px;
+    /* min-width: 145px;
+    min-height: 175px; */
+    background-color:  #EAF2F5;
+    border-radius: 30px;
+}
+
+.text-block img{
+    max-width: 58px;
+    max-height: 58px;
+    margin-top: 10px;
+}
+
+.text-block .title{
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 0;
+    margin-inline: 20%;
+}
+
+.text-block .text{
+    font-weight: 400;
+    font-size: 13px;
+    margin-bottom: 0;
+    margin-inline: 15%;
+}
+

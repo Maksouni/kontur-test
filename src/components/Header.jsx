@@ -10,7 +10,7 @@ export default function Header() {
                     <span style={{ color: 'var(--primary-color)' }}>D</span>
                     e
                 </a>
-                <ul>
+                <ul className='header-list'>
                     <li>
                         <a href="">Чему вы научитесь</a>
                     </li>

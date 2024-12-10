@@ -1,9 +1,30 @@
-@import url('./fonts/stylesheet.css');
-body{
-  font-family: 'Gilroy';
+@import url("./fonts/stylesheet.css");
+body {
+  font-family: "Gilroy";
   color: var(--text-color);
-  background-color: #F9F8FD;
-  /* background-color: rgba(20, 4, 50, 0.941); */
+  background-color: #f9f8fd;
   margin: 0;
 }
 
+li {
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+.title-study {
+  font-size: 46px;
+  font-weight: 600;
+  text-align: center;
+  margin-inline: auto;
+  margin-top: 4rem;
+}
+
+.blocks-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  list-style: none;
+  padding-left: 0;
+}
