@@ -60,13 +60,16 @@ li a:hover {
 footer {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    margin-inline: 2rem;
 }
 
 footer .grid {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
-    width: 1160px;
-    margin: auto;
+    width: 100%;
+    max-width: 1160px;
+    margin-inline: 2rem;
 }
 
 .grid-item {
@@ -130,6 +133,94 @@ footer hr {
     margin-bottom: 2rem;
 }
 
+@media (max-width: 780px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-inline: 2rem;
+    }
+
+    footer .grid {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 1160px;
+        margin-inline: 2rem;
+    }
+
+    .grid-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .logo-and-title {
+        justify-content: center;
+        width: 100%;
+    }
+    .logo-and-title h2 {
+        width: 96px;
+    }
+    .logo-and-title p {
+        width: 151px;
+    }
+
+    .social-list {
+        display: flex;
+        padding: 0;
+        margin: 0;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        gap: 1rem;
+    }
+
+    .footer-nav ul {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        margin-left: auto;
+        margin-bottom: 2rem;
+        padding: 0;
+        text-align: center;
+        align-items: center;
+        font-size: 13px;
+        gap: 1rem;
+    }
+
+    .grid-item a{
+        margin-inline: auto;
+    }
+
+    .footer-mail {
+        margin-inline: auto;
+        text-decoration: none;
+        color: inherit;
+    }
+
+    footer hr {
+        width: 100%;
+        min-width: 300px;
+        margin-block: 1.5rem;
+    }
+
+    .second-grid a {
+        text-decoration: none;
+        color: #8e8e8e;
+        margin-bottom: 1rem;
+        font-size: 12px;
+    }
+
+    .second-grid{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+    }
+}
+
 /* ******************************************************* 
     carousel 
  ******************************************************* */
@@ -189,7 +280,6 @@ footer hr {
 }
 
 @media (max-width: 720px) {
-    
 }
 
 @media (max-width: 1000px) {
@@ -218,7 +308,6 @@ footer hr {
         width: 219px;
         height: 210px;
     }
-
 
     .slide-text-container {
         display: flex;
@@ -256,7 +345,6 @@ footer hr {
     .swiper-button-prev {
         display: none !important;
     }
-
 }
 
 /* ******************************************************* 
@@ -291,7 +379,6 @@ footer hr {
 .swiper-button-prev::after {
     content: "←" !important;
 }
-
 
 /* ******************************************************* 
     button
@@ -352,27 +439,27 @@ footer hr {
     margin-inline: 15%;
 }
 
-@media(max-width: 572px){
+@media (max-width: 572px) {
     .info-block {
         width: 145px;
         height: 175px;
         background-color: #eaf2f5;
         border-radius: 30px;
     }
-    
+
     .info-block img {
         max-width: 40px;
         max-height: 40px;
         margin-top: 5px;
     }
-    
+
     .info-block .title {
         font-weight: 400;
         font-size: 12px;
         margin-bottom: 0;
         margin-inline: 5px;
     }
-    
+
     .info-block .text {
         font-weight: 400;
         font-size: 9px;
