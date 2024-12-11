@@ -20,6 +20,12 @@ li {
   margin-top: 4rem;
 }
 
+@media (max-width: 720px) {
+  .title-study {
+    font-size: 24px;
+  }
+}
+
 .info-blocks-list {
   display: flex;
   flex-wrap: wrap;
@@ -30,9 +36,6 @@ li {
   list-style: none;
   padding-left: 0;
 }
-
-
-
 
 .text-image-container {
   display: flex;
@@ -82,15 +85,69 @@ li {
   margin-left: 5rem;
 }
 
+@media (max-width: 800px){
+  .text-image-container {
+    display: flex;
+    flex-direction: column;
+  }
 
+  .text-image-container .img-container {
+    width: 300px;
+    height: 234px;
+  }
 
+  .text-container {
+    width: 300px;
+    height: 285px;
+  }
 
-.fancybox{
+  .text-container h2 {
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 1.5rem;
+  }
+
+  .text-container p {
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 0;
+    margin-left: 1.5rem;
+    max-width: 257px;
+  }
+
+  .img-2{
+    order: 0;
+  }
+
+  .text-2{
+    order: 1;
+  }
+}
+
+@media (max-width: 1160px) {
+  .text-image-container{
+    margin-inline: 2rem;
+  }
+
+  .text-container h2{
+    margin-inline: 2rem;
+  }
+
+  .text-container p{
+    margin-inline: 2rem
+  }
+
+  
+  
+}
+
+.fancybox {
   display: flex;
   justify-content: center;
   margin-top: 4rem;
 }
-
 
 .gallery {
   display: grid;
@@ -114,20 +171,67 @@ li {
 }
 
 .gallery .item-1 {
-  grid-column: 1; /* Занимает первый столбец */
+  grid-column: 1;
   grid-row: 1 / span 2;
   width: 571px;
   height: 571px;
 }
 
+.ymap-wrapper{
+  display: flex;
+  justify-content: center;
+}
+
 .ymap-container {
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-top: 3rem;
-  margin-inline: auto;
   margin-bottom: 3rem;
-  width: 1160px;
+  margin-inline: 1rem;
+  width: 100%;
+  max-width: 1160px;
   height: 423px;
   border-radius: 30px;
   overflow: hidden;
+}
+
+
+
+@media (max-width: 1160px) {
+  .gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 1fr 1fr;
+    gap: 10px;
+  }
+
+  .gallery .item {
+    border-radius: 30px;
+    overflow: hidden;
+    width: 275px;
+    height: 275px;
+    margin: auto;
+  }
+
+  .gallery .item-1 {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+    width: 571px;
+    height: 571px;
+    margin-inline: auto;
+  }
+}
+
+
+@media (max-width: 630px){
+  .gallery .item {
+    width: 145px;
+    height: 145px;
+  }
+
+  .gallery .item-1 {
+    width: 300px;
+    height: 300px;
+  }
 }

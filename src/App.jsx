@@ -113,7 +113,7 @@ function App() {
         </div>
       </div>
       <div className="text-image-container">
-        <div className="text-container">
+        <div className="text-container text-2">
           <h2>Методика обучения</h2>
           <p>
             Весь учебный материал структурирован по принципу <br /> «спирального
@@ -123,7 +123,7 @@ function App() {
             гарантирует, что вы не пропустите ничего важного.
           </p>
         </div>
-        <div className="img-container">
+        <div className="img-container img-2">
           <img src={image2} alt="study methodic" />
         </div>
       </div>
@@ -156,24 +156,26 @@ function App() {
         </Fancybox>
       </div>
 
-      <YMaps query={{apikey: "347a9901-ac47-49ac-a0dc-001fb838321c"}}>
-        <div className="ymap-container">
-          <Map
-            defaultState={{
-              center: [55.028894, 82.926493],
-              zoom: 15,
-            }}
-            width="100%"
-            height="100%"
-          >
-            <Placemark
-              geometry={[55.028894, 82.926493]}
-              properties={{
-                hintContent: "Депутатская, 46",
-                balloonContent: "Депутатская, 46",
+      <YMaps query={{ apikey: "347a9901-ac47-49ac-a0dc-001fb838321c" }}>
+        <div className="ymap-wrapper">
+          <div className="ymap-container">
+            <Map
+              defaultState={{
+                center: [55.028894, 82.926493],
+                zoom: 15,
               }}
-            />
-          </Map>
+              width="100%"
+              height="100%"
+            >
+              <Placemark
+                geometry={[55.028894, 82.926493]}
+                properties={{
+                  hintContent: "Депутатская, 46",
+                  balloonContent: "Депутатская, 46",
+                }}
+              />
+            </Map>
+          </div>
         </div>
       </YMaps>
 

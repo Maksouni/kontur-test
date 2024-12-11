@@ -184,10 +184,79 @@ footer hr {
     height: 2px;
     background-color: #dedede;
     margin-top: 1px;
-    /* margin-bottom: 10px;
-    margin-right: 200px; */
     margin-left: 0px;
     width: 365px;
+}
+
+@media (max-width: 720px) {
+    
+}
+
+@media (max-width: 1000px) {
+    .carousel-wrapper {
+        max-width: 294px;
+    }
+    .carousel-slide {
+        position: relative;
+        display: flex;
+        justify-content: start;
+        width: 100%;
+        border-radius: 50px;
+        height: 609px;
+        background-image: url("../assets/background-slider-mob.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .image-slide {
+        position: absolute;
+        top: 75%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 10;
+        width: 219px;
+        height: 210px;
+    }
+
+
+    .slide-text-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        width: 100%;
+        align-items: center;
+        margin: 0;
+        z-index: 10;
+        text-align: center;
+    }
+
+    .slide-text-container h1 {
+        font-size: 24px;
+        font-weight: 500;
+        margin-bottom: 1rem;
+        margin-top: 1.5rem;
+        margin-inline: 5px;
+    }
+    .slide-text-container p {
+        font-size: 12px;
+        margin-bottom: 1.5rem;
+    }
+
+    .slide-text-container hr {
+        border: none;
+        height: 2px;
+        background-color: #dedede;
+        margin-top: 1px;
+        margin-inline: auto;
+        width: 280px;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        display: none !important;
+    }
+
 }
 
 /* ******************************************************* 
@@ -222,6 +291,7 @@ footer hr {
 .swiper-button-prev::after {
     content: "←" !important;
 }
+
 
 /* ******************************************************* 
     button
