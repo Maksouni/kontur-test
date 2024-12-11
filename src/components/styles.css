@@ -57,13 +57,11 @@ li a:hover {
   transform: scale(1.1);
 }
 
+.menu{
+  /* display: none; */
+}
+
 @media (max-width: 750px) {
-  header {
-  }
-
-  nav {
-  }
-
   .header-list {
     display: none;
   }
@@ -80,7 +78,20 @@ li a:hover {
   .phone {
     margin: auto;
   }
+
+  .menu-button{
+    display: block !important;
+  }
 }
+
+.menu-button{
+  display: none;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
 
 /* ******************************************************* 
     footer
