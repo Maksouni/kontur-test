@@ -13,7 +13,6 @@ export default function Modal() {
       document.body.classList.remove("modal-open");
     }
 
-    // Очистка класса при размонтировании компонента
     return () => {
       document.body.classList.remove("modal-open");
     };
