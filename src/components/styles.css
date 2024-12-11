@@ -319,7 +319,7 @@ footer hr {
 /* ******************************************************* 
     text-block
  ******************************************************* */
-.text-block {
+.info-block {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -332,24 +332,53 @@ footer hr {
     border-radius: 30px;
 }
 
-.text-block img {
+.info-block img {
     max-width: 58px;
     max-height: 58px;
     margin-top: 10px;
 }
 
-.text-block .title {
+.info-block .title {
     font-weight: 400;
     font-size: 16px;
     margin-bottom: 0;
     margin-inline: 20%;
 }
 
-.text-block .text {
+.info-block .text {
     font-weight: 400;
     font-size: 13px;
     margin-bottom: 0;
     margin-inline: 15%;
+}
+
+@media(max-width: 572px){
+    .info-block {
+        width: 145px;
+        height: 175px;
+        background-color: #eaf2f5;
+        border-radius: 30px;
+    }
+    
+    .info-block img {
+        max-width: 40px;
+        max-height: 40px;
+        margin-top: 5px;
+    }
+    
+    .info-block .title {
+        font-weight: 400;
+        font-size: 12px;
+        margin-bottom: 0;
+        margin-inline: 5px;
+    }
+    
+    .info-block .text {
+        font-weight: 400;
+        font-size: 9px;
+        margin-bottom: 0;
+        margin-inline: 5px;
+    }
 }
 
 /* ******************************************************* 
