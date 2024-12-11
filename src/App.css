@@ -6,6 +6,10 @@ body {
   margin: 0;
 }
 
+body.modal-open {
+  overflow: hidden; 
+}
+
 li {
   display: flex;
   text-align: center;

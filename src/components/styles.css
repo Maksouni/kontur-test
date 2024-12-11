@@ -490,9 +490,9 @@ footer hr {
     flex-direction: column;
     margin: auto;
     width: 635px;
-    max-height: 942px;
+    height: 100%;
     background-color: #ffffff;
-    border-radius: 30px;
+    overflow: scroll;
 }
 
 .modal-content {
@@ -554,4 +554,15 @@ textarea {
 .conf-politics a {
     text-decoration: none;
     color: var(--primary-color);
+}
+
+
+@media (max-width: 635px) {
+    .modal{
+        width: 100%;
+    }
+
+    .modal-content{
+        margin-inline: 2rem;
+    }
 }

@@ -1,10 +1,23 @@
- import CustomButton from "./CustomButton";
+import CustomButton from "./CustomButton";
 import { useModal } from "../providers/ModalContext";
+import { useEffect } from "react";
 import "./styles.css";
 
 export default function Modal() {
   const { isOpen, closeModal } = useModal();
 
+  useEffect(() => {
+    if (isOpen) {
+      document.body.classList.add("modal-open");
+    } else {
+      document.body.classList.remove("modal-open");
+    }
+
+    // Очистка класса при размонтировании компонента
+    return () => {
+      document.body.classList.remove("modal-open");
+    };
+  }, [isOpen]);
   if (!isOpen) return null;
   const handleClick = () => {};
   const handleOverlayClick = (e) => {
