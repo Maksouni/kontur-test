@@ -29,6 +29,7 @@ export default function Modal() {
     <div className="modal-overlay" onClick={handleOverlayClick}>
       <div className="modal">
         <div className="modal-content">
+          <button className="close-button" onClick={()=>closeModal()}>X</button>
           <h1>Заказать звонок</h1>
           <p>Имя</p>
           <input

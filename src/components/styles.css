@@ -472,6 +472,18 @@ footer hr {
     modal
  ******************************************************* */
 
+.close-button{
+    position: absolute;
+    cursor: pointer;
+    right: 10px;
+    top: 10px;
+    font-size: 20px;
+    border-radius: 50%;
+    border-style: none;
+    width: 36px;
+    height: 36px;
+}
+
 .modal-overlay {
     position: fixed;
     top: 0;
